@@ -19,6 +19,12 @@ const GetMnemonic = () => {
   };
 
   const generateMultipleWallets = () => {
+    if(change==='')
+    {
+      alert("pls generate the mneomics")
+    }
+    else
+    {
     const seed = bip39.mnemonicToSeedSync(change);
     const hd = HDKey.fromMasterSeed(seed.toString("hex"));
     const path = `m/44'/501'/${wallets.length}'/0'`;
@@ -33,6 +39,7 @@ const GetMnemonic = () => {
     setTimeout(() => {
       setShowVideo(true);
     }, 3000);
+  }
   };
 
   const handleTogglePrivateKey = (index) => {
