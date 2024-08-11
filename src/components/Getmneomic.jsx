@@ -110,7 +110,7 @@ const GetMnemonic = () => {
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <div className="bg-white p-4 rounded shadow-lg w-full max-w-lg">
             <h4 className="text-lg font-semibold mb-2">congrats</h4>
-            <iframe
+            {/* <iframe
               width="100%"
               height="100%"
               src="src/assets/cel.mp4" // Replace with the actual YouTube embed URL
@@ -118,7 +118,7 @@ const GetMnemonic = () => {
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-            ></iframe>
+            ></iframe> */}
             {/* <video
               controls
               width="100%"
